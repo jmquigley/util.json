@@ -1,13 +1,13 @@
-# util.json
+# util.obj-cycle
 
 > Monkey patched additional JSON functionality for cyclical objects
 
-[![build](https://travis-ci.org/jmquigley/util.json.svg?branch=master)](https://travis-ci.org/jmquigley/util.json)
+[![build](https://travis-ci.org/jmquigley/util.obj-cycle.svg?branch=master)](https://travis-ci.org/jmquigley/util.obj-cycle)
 [![analysis](https://img.shields.io/badge/analysis-tslint-9cf.svg)](https://palantir.github.io/tslint/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![testing](https://img.shields.io/badge/testing-jest-blue.svg)](https://facebook.github.io/jest/)
-[![NPM](https://img.shields.io/npm/v/util.json.svg)](https://www.npmjs.com/package/util.json)
-[![coverage](https://coveralls.io/repos/github/jmquigley/util.json/badge.svg?branch=master)](https://coveralls.io/github/jmquigley/util.json?branch=master)
+[![NPM](https://img.shields.io/npm/v/util.obj-cycle.svg)](https://www.npmjs.com/package/util.obj-cycle)
+[![coverage](https://coveralls.io/repos/github/jmquigley/util.obj-cycle/badge.svg?branch=master)](https://coveralls.io/github/jmquigley/util.obj-cycle?branch=master)
 
 This module is a wrapper for cyclical object resolution using Douglas Crockford's [JSON-js cycle code](https://github.com/douglascrockford/JSON-js).  It [monkey patches](https://en.wikipedia.org/wiki/Monkey_patch) two functions:
 
