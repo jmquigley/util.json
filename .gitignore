@@ -38,10 +38,12 @@ jspm_packages
 .DS_Store
 tmp-unit-test-data
 
+*.tgz
 *.js
 *.js.map
+*.min.js
 *.d.ts
 !gulpfile.js
 !docs/**/*.js
+!jest.config.js
 !src/**/*.js
-cycle.min.js
