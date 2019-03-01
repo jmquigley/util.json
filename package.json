@@ -1,6 +1,6 @@
 {
 	"name": "util.obj-cycle",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"debug": false,
 	"author": "jmquigley <jmquigley@outlook.com>",
 	"description": "Monkey patched additional JSON functionality to handle cyclical objects",
