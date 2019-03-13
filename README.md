@@ -37,7 +37,7 @@ $ yarn run all
 To use this module, just use require to [monkey patch](https://en.wikipedia.org/wiki/Monkey_patch) it into the environment:
 
 ```javascript
-require('util.json');
+require('util.obj-cycle');
 ```
 
 To remove the cycles from an object use `JSON.decycle()`:

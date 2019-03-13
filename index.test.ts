@@ -1,6 +1,6 @@
 "use strict";
 
-require("../index");
+require("./index");
 
 test("Test printing a cyclical object", () => {
 	const i = {a: "x", ref: null};
