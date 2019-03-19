@@ -1,6 +1,6 @@
 {
 	"name": "util.obj-cycle",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"debug": false,
 	"author": "jmquigley <jmquigley@outlook.com>",
 	"description": "Monkey patched additional JSON functionality to handle cyclical objects",
@@ -22,15 +22,16 @@
 	"files": [
 		"index.*.min.js",
 		"index.d.ts",
-		"src/cycle.min.js"
+		"src/cycle.min.js",
+		"src/cycle.min.d.ts"
 	],
 	"devDependencies": {
 		"@babel/cli": "^7.2.3",
-		"@babel/core": "^7.3.4",
+		"@babel/core": "^7.4.0",
 		"@babel/plugin-transform-modules-umd": "^7.2.0",
-		"@babel/preset-env": "^7.3.4",
+		"@babel/preset-env": "^7.4.0",
 		"@babel/preset-typescript": "^7.3.3",
-		"@babel/runtime": "^7.3.4",
+		"@babel/runtime": "^7.4.0",
 		"@types/fs-extra": "5.0.5",
 		"@types/jest": "^24.0.11",
 		"@types/node": "^11.11.3",
@@ -42,7 +43,7 @@
 		"tslint": "^5.14.0",
 		"tslint-config-prettier": "^1.18.0",
 		"typescript": "^3.3.3333",
-		"util.pkgwrap": "^0.0.105"
+		"util.pkgwrap": "^0.0.107"
 	},
 	"pkgwrap": {
 		"cleanup": [
@@ -52,9 +53,10 @@
 	},
 	"scripts": {
 		"all": "yarn install && yarn build && yarn test && yarn manifest",
-		"build": "yarn clean && yarn lint && yarn prettier && yarn build:es && yarn build:umd",
+		"build": "yarn clean && yarn lint && yarn prettier && yarn build:src && yarn build:es && yarn build:umd",
 		"build:es": "tsc -p . && minify index.js --out-file index.es.min.js",
 		"build:umd": "babel index.js --out-file index.umd.min.js",
+		"build:src": "babel ./src/cycle.js --out-file ./src/cycle.min.js",
 		"clean": "pkgwrap --clean",
 		"clean:dist": "yarn clean && rimraf node_modules/ yarn.lock",
 		"coverage": "pkgwrap --coverage --jest",

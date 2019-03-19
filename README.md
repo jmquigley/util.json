@@ -22,7 +22,7 @@ This module uses [yarn](https://yarnpkg.com/en/) to manage dependencies and run 
 To install as an application dependency with cli:
 
 ```
-$ yarn add --dev util.json
+$ yarn add --dev util.obj-cycle
 ```
 
 To build the app and run all tests:
@@ -60,3 +60,11 @@ The process can be reversed on the object with `JSON.retrocycle`:
 ```javascript
 	let obj = JSON.retrocycle(JSON.parse(s));
 ```
+
+The functions can also be included directly without the monkey patching by using import:
+
+```javascript
+import {decycle, retrocycle} from "util.obj-cycle";
+```
+
+This is the same underlying code.  Just a differnt way to do the same thing.

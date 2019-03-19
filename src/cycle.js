@@ -175,3 +175,6 @@ if (typeof JSON.retrocycle !== "function") {
 		return $;
 	};
 }
+
+export const decycle = JSON.decycle;
+export const retrocycle = JSON.retrocycle;
