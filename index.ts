@@ -3,7 +3,7 @@
 import {decycle, retrocycle} from "./src/cycle.min.js";
 
 export interface JSON {
-	decycle(object: any, replacer: any): any;
+	decycle(object: any, replacer?: any): any;
 	retrocycle($: any): any;
 }
 
