@@ -1,5 +1,3 @@
-"use strict";
-
 import {decycle, retrocycle} from "./src/cycle.min.js";
 
 export interface JSON {
